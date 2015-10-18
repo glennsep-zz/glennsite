@@ -4,6 +4,11 @@ body
     padding-top:70px;
 }
 
+.container 
+{
+	width:90%;
+}
+
 /* Jumbotron */
 .jumbotron
 {
