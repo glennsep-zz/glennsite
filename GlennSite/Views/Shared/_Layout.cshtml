@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Styles.Render("~/Content/bootstrap-theme-min.css")
+    @Styles.Render("~/Content/Site.css")
+</head>
+<body>
+    <div class="container">
+        <header class="page-header"> 
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid navbar-brand text-muted">
+                    @Html.ActionLink("Glenn's Site", "Index", "Home")                  
+                </div>
+                <div>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" data-target="#">Electronic Detective<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Play Electronic Detective", "ElectronicDetective", "ElectronicDetective")</li>
+                                <li>@Html.ActionLink("How to Play", "HowToPlay", "ElectronicDetective")</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header> 
+        <div class="jumbotron">
+            @RenderBody()
+        </div>
+
+        <div class="modal-footer">
+            &copy; 2015 Glenn Seplowitz - @DateTime.Now.ToLongDateString() - @DateTime.Now.ToLongTimeString()
+        </div>
+    </div>
+    @Scripts.Render("~/Scripts/jquery-1.9.1.min.js")
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+
+</body>
+</html>
