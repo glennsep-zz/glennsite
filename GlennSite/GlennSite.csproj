@@ -144,6 +144,16 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\TodaysJokes\Download_on_the_App_Store_Badge_US-UK_135x40.svg" />
+    <Content Include="Images\TodaysJokes\MainApp.png" />
+    <Content Include="Images\TodaysJokes\TodaysJoke-Categories.jpg" />
+    <Content Include="Images\TodaysJokes\TodaysJoke-Contact.jpg" />
+    <Content Include="Images\TodaysJokes\TodaysJoke-DisplayJokes.jpg" />
+    <Content Include="Images\TodaysJokes\TodaysJoke-ListJokes.jpg" />
+    <Content Include="Images\TodaysJokes\TodaysJoke-MainScreen.jpg" />
+    <Content Include="Images\TodaysJokes\TodaysJoke-Navigation.jpg" />
+    <Content Include="Images\TodaysJokes\TodaysJoke-Submit.jpg" />
+    <Content Include="Images\TodaysJokes\TodaysJoke.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
