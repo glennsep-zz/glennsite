@@ -106,13 +106,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Common.csproj" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="DataAccess.csproj" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\Electronic Detective\01_Lenny_Little.jpeg" />
@@ -143,7 +141,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\GlennSite GoDaddy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\TodaysJokes\AppStore.png" />
     <Content Include="Images\TodaysJokes\Download_on_the_App_Store_Badge_US-UK_135x40.svg" />
     <Content Include="Images\TodaysJokes\MainApp.png" />
     <Content Include="Images\TodaysJokes\TodaysJoke-Categories.jpg" />
