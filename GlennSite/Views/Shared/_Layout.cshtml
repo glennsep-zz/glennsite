@@ -9,10 +9,11 @@
     @Styles.Render("~/Content/Site.css")
 </head>
 <body>
+    <!-- menu bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             @Html.ActionLink("Glenn's Site", "Index", "Home", null, new { @class = "navbar-brand text-muted"})
-            <div class="collaspe navbar-collaspe">
+            <div class="collaspe navbar-collaspe media-bottom">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
                     <li class="dropdown">
@@ -27,7 +28,13 @@
             </div>
         </div>
     </div>
- 
+
+    <!-- place space between menu and body -->
+    <div class="row">
+        <div class="col-lg-12" style="height:80px"></div>
+    </div>
+
+    <!-- body and page footer-->
     <div class="container">
 
         <div class="jumbotron">
