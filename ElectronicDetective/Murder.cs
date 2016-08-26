@@ -593,6 +593,24 @@ namespace ElectronicDetective
             }
         }
 
+        /// <summary>
+        /// Saves the crime once all the scrime scene is generated.  This will be used to help faciliate answering questions quicker and updating the case fact sheet.
+        /// </summary>
+        public void SaveCrime()
+        {
+            // save information about the game
+
+
+        }
+
+        /// <summary>
+        /// This saves information about the current game
+        /// </summary>
+        public void SaveGameInformation()
+        {
+
+        }
+
         #endregion
 
         #region Properties

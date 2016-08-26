@@ -36,8 +36,8 @@ namespace Common
             int[] numberList;
             int[] numberRand;
 
-            //try
-            //{
+            try
+            {
                 // first build a list of numbers that are either odd or even
                 for (int count = lower; count <= upper; count++)
                 {
@@ -61,11 +61,11 @@ namespace Common
                 {
                     numbers.Add(numberList[numberRand[count]]);
                 }
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
             // return the array of numbers
             return numbers.ToArray();
@@ -146,14 +146,14 @@ namespace Common
         /// <returns>true if odd, false if even</returns>
         public static bool IsOdd(int number)
         {
-            //try
-            //{
+            try
+            {
                 return (number % 2 != 0);
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         #endregion
