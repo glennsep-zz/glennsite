@@ -12,7 +12,6 @@ namespace GlennSite.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            Murder game = new Murder();
             
             return View();
         }
