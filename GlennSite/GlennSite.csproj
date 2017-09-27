@@ -65,6 +65,8 @@
       <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -149,6 +151,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <EntityDeploy Include="Models\CaseFactSheet.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CaseFactSheet.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CaseFactSheet.edmx.diagram">
+      <DependentUpon>CaseFactSheet.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\GlennSite GoDaddy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Images\TodaysJokes\AppStore.png" />
@@ -162,6 +171,16 @@
     <Content Include="Images\TodaysJokes\TodaysJoke-Navigation.jpg" />
     <Content Include="Images\TodaysJokes\TodaysJoke-Submit.jpg" />
     <Content Include="Images\TodaysJokes\TodaysJoke.png" />
+    <Content Include="Models\CaseFactSheet.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CaseFactSheet.edmx</DependentUpon>
+      <LastGenOutput>CaseFactSheet.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CaseFactSheet.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CaseFactSheet.edmx</DependentUpon>
+      <LastGenOutput>CaseFactSheet.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -175,6 +194,33 @@
     <Compile Include="Controllers\TodaysJokeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CaseFactSheet.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseFactSheet.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CaseFactSheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseFactSheet.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CaseFactSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaseFactSheet.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CFS_Alibi.cs">
+      <DependentUpon>CaseFactSheet.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CFS_MurderFacts.cs">
+      <DependentUpon>CaseFactSheet.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CFS_WhoDidIt.cs">
+      <DependentUpon>CaseFactSheet.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CFS_WhoWasWhere.cs">
+      <DependentUpon>CaseFactSheet.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -197,7 +243,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -212,6 +257,9 @@
       <Project>{fb58e725-6b18-4f31-8f0b-7b10aa24273d}</Project>
       <Name>ElectronicDetective</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
