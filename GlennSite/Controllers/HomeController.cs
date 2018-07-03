@@ -12,7 +12,7 @@ namespace GlennSite.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            
+            // test to see if updates git
             return View();
         }
 
